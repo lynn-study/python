@@ -37,3 +37,42 @@ for index, string in enumerate(strings):
 	if "book" in string:
 		strings[index] = "apple"
 print strings
+
+print
+print "else"
+
+from math import sqrt
+for n in range(99, 81, -1):
+	root = sqrt(n)
+	if root == int(root):
+		print n
+		break
+else:
+	print "did not find it"
+
+print
+print "list comprehension"
+
+y = [x * x for x in range(10)]
+print y
+
+print
+y = [x * x for x in range(10) if x % 3 == 0]
+print y
+
+print
+z = [(x, y) for x in range(3) for y in range(3)]
+print z
+
+print
+
+girls = ["alice", "kate"]
+boys = ["john", "kom"]
+print [b+"+"+g for b in boys for g in girls if b[0] == g[0]]
+
+#print
+#dictgirls = {}
+#for girl in girls:
+#	dictgirls.setdefault(girl[0], []).append(girl)
+#
+#print [b+"+"+g for b in boys for g in dictgirls[b[0]]]

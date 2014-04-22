@@ -9,3 +9,9 @@ name = ""
 while not name.strip():
 	name = raw_input("Name:")
 print name
+
+while True:
+	word = raw_input("Enter words:")
+	if word:
+		break
+print word
